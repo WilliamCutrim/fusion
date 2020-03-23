@@ -19,14 +19,14 @@ class Base(models.Model):
 class Servico(Base):
     ICONE_CHOICES = (
         ('lni-cog', 'Engrenagem'),
-        ('lni-start-up', 'Gráficos'),
+        ('lni-stats-up', 'Gráficos'),
         ('lni-users', 'Usuarios'),
         ('lni-layers', 'Design'),
         ('lni-mobile', 'Mobile'),
         ('lni-rocket', 'Foguete'),
     )
     servico = models.CharField('Serviço', max_length=100)
-    descrição = models.TextField('Descrição', max_length=200)
+    descrição = models.TextField('Descrição', max_length=200) #!!!! mudar esse bug
     icone = models.CharField('Icone', max_length=12, choices=ICONE_CHOICES)
 
     class Meta:
