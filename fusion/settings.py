@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%)&9lg9=$ho)@z68wp-ehq6hk0krp0az*^*v*enn1ag6l++3=x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -94,7 +94,7 @@ DATABASES = {
 
 DATABASES = {
     'default': dj_database_url.config()
-}
+}'''
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -140,7 +140,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 #Email teste console
 
-#EMAIL_BACKED = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKED = 'django.core.mail.backends.console.EmailBackend'
 
 """
 #Email produção
