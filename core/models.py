@@ -59,6 +59,6 @@ class Funcionario(Base):
         verbose_name = 'Funcionário'
         verbose_name_plural = 'Funcionários'
 
-        def __str__(self):
-            return self.nome
+    def __str__(self):
+        return self.nome
 
